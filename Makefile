@@ -1,7 +1,7 @@
 CC=gcc
 CFLAGS=-Wall -Werror -std=c99 -c
 INC=-I.
-LFLAGS=-g -lm #-lfcgi
+LFLAGS=-g -lm -lfcgi
 SRC=$(wildcard ./*.c)
 OBJ=$(addprefix ./,$(notdir $(SRC:.c=.o)))
 
